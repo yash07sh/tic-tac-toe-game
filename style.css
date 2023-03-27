@@ -1,0 +1,86 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: bisque;
+    font-family: 'Permanent Marker', cursive;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 54px;
+    font-weight: 200;
+    text-transform: uppercase;
+    
+   
+}
+
+.container{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 40px;
+
+}
+
+#gameboard{
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 4px solid rgb(208, 67, 6);
+    border-right: 4px solid rgb(208, 67, 6);
+    font-size: 56px;
+    color: rgb(208, 67, 6);
+
+}
+
+.box:nth-child(3n){
+    border-right: none;
+}
+.box:nth-child(6) ~ .box{
+    border-bottom: none;
+}
+
+#resetbtn{
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: orange;
+    font-size: 14px;
+    border: none;
+    transition: 200ms transform;
+
+}
+
+.winner{
+    background-color:rgba(208, 67, 6, 0.411) ;
+}
+
+#resetbtn:hover{
+    cursor:pointer;
+    transform: translateY(-2px);
+}
+.right{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
